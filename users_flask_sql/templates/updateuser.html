@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+      
+        <form class="w-50 mx-auto d-block my-3 p-3 border " action="/update_user/{{user_id.id}}" method="POST" >
+            <a class="text-primary text-decoration-none badge badge-info" href="/">Home</a>
+              <h1 class="text-center">Add User </h1>
+            <div class="form-group">
+              <label for="uname">First Name:</label>
+              <input type="text" class="form-control"  name="uname" value="{{user_id.first_name}}">
+            </div>
+            <div class="form-group">
+              <label for="ulastname">Last Name:</label>
+              <input type="text" class="form-control"   name="ulastname" value="{{user_id.last_name}}">
+            </div>
+            <div class="form-group">
+                <label for="uemail">Email:</label>
+                <input type="text" class="form-control"  name="uemail" value="{{user_id.email}}">
+            </div>
+            <button type="submit" class="btn btn-primary my-3 " name="submit" >Update User</button>
+            <!-- <a href="/"> Create a new user</a> -->
+          </form>
+
+   
+</body>
+</html>
